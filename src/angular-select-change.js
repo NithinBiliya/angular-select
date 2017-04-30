@@ -1,9 +1,9 @@
-// github link - https://github.com/NithinBiliya/angular-select
+// github link - https://github.com/NithinBiliya/angular-select-change
 
 (function(){
-	angular.module('as.select', [])
+	angular.module('as.change', [])
 
-	.directive('asSelect', function() {
+	.directive('asChange', function() {
 	  return {
 		restrict: 'A',
 		link: function link(scope, element, attrs) {
@@ -12,14 +12,14 @@
 			
 			element.bind("click", function(){
 			  if(clickCounter==1) {
-				if(attrs.asSelect=="autoFocusOff") {
+				if(attrs.asChange=="autoFocusOff") {
 				  element[0].blur();
 				} else {
-				  if(attrs.asSelect.split(';')[0].trim()=="autoFocusOff") {
-					scope.$eval(attrs.asSelect.split(';')[1].trim());
+				  if(attrs.asChange.split(';')[0].trim()=="autoFocusOff") {
+					scope.$eval(attrs.asChange.split(';')[1].trim());
 					element[0].blur();
 				  } else {
-					scope.$eval(attrs.asSelect);
+					scope.$eval(attrs.asChange);
 				  }
 				}
 				clickCounter=0;

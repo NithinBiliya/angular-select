@@ -2,7 +2,7 @@
 
   <head>
     <script src="lib/angular/angular.min.js"></script>
-    <script src="dist/angular-select.min.js"></script>
+    <script src="dist/angular-select-change.min.js"></script>
     <script src="script.js"></script>
   </head>
 
@@ -21,7 +21,7 @@
       <!-- angular select - will be fired even when user selects the same value -->
       <p>
         angular select - will be fired even when user selects the same value - <br>
-        <select ng-model="secondDropDownValue" as-select="testFunc(secondDropDownValue);">
+        <select ng-model="secondDropDownValue" as-change="testFunc(secondDropDownValue);">
             <option>ondu</option>
             <option>yaradu</option>
             <option>mooru</option>
@@ -31,7 +31,7 @@
       <!-- angular select with autoFocusOff -->
       <p>
         angular select with autoFocusOff - <br>
-        <select as-select="autoFocusOff">
+        <select as-change="autoFocusOff">
             <option>ondu</option>
             <option>yaradu</option>
             <option>mooru</option>
@@ -41,7 +41,7 @@
       <!-- angular select with autoFocusOff -->
       <p>
         angular select with autoFocusOff - <br>
-        <select ng-model="thirdDropDownValue" as-select="autoFocusOff; testFunc(thirdDropDownValue);">
+        <select ng-model="thirdDropDownValue" as-change="autoFocusOff; testFunc(thirdDropDownValue);">
             <option>ondu</option>
             <option>yaradu</option>
             <option>mooru</option>
