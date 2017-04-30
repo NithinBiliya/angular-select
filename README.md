@@ -7,6 +7,31 @@ Demo
 --------
 [DEMO link](https://nithinbiliya.github.io/angular-select-change/)
 
+Installation
+------------
+* Install using bower
+```
+ bower install angular-select-change
+```
+* Or Install using npm
+```
+ npm install angular-select-change
+```
+
+Install the dependencies with -
+```
+ bower install
+ npm install
+```
+
+Build using grunt -
+```
+ grunt
+```
+
+Include the angular-select-change.min.js or angular-select-change.js file that is generated in dist folder in your index file and inject the as.change angular module into your module to use the as-change directive.
+
+
 Usage
 ------
 * Use as-change attribute in select tag. Here testFunc() gets called even when user selectes the same value from the dropdown
