@@ -1,0 +1,26 @@
+{
+  "name": "angular-select",
+  "version": "1.1.0",
+  "homepage": "https://github.com/NithinBiliya/angular-select",
+  "authors": [
+    "Nithin Biliya"
+  ],
+  "description": "as-select directive for select tag",
+  "main": "src\\angularSelect.js",
+  "keywords": [
+    "angular",
+    "select"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
+}
